@@ -6,6 +6,24 @@ import org.json.simple.parser.ParseException;
 
 public class classes {
 
+    class  {
+
+    public () {}
+    
+
+    public JSONObject toJSON() {
+
+        JSONObject jo = new JSONObject();
+$Class_ToJson$
+        return jo;
+    }
+
+    public void fromJSON(String jsonString) throws ParseException {
+        JSONObject jsonObject = (JSONObject) JSONValue.parseWithException(jsonString);
+$Json_ToClass$
+    }
+
+}
     class m1 {
 
     public m1() {}

@@ -99,7 +99,7 @@ public class res extends RESTService {
    * 
    *
    * 
-   * @return Response 
+   * @return Response Response of the method m1. This is a short description only for test purposes.
    * 
    */
   @GET
@@ -107,7 +107,7 @@ public class res extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resp")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Response of the method m1. This is a short description only for test purposes.")
   })
   @ApiOperation(value = "m1", notes = " ")
   public Response m1() {
@@ -126,7 +126,7 @@ public class res extends RESTService {
     // resp
     boolean resp_condition = true;
     if(resp_condition) {
-      JSONObject result = new JSONObject();
+      JSONObject result = new classes().new m1().toJSON();
 
       
 
