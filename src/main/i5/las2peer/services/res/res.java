@@ -81,9 +81,9 @@ public class res extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "120", version = "0.1.0",
-          description = "Description2",
-          termsOfService = "Terms",
+      info = @Info(title = "120", version = "0.0.1",
+          description = "Test Description",
+          termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/PhilCAEOrg/microservice-120/blob/master/LICENSE.txt") ) )
@@ -99,7 +99,7 @@ public class res extends RESTService {
    * 
    *
    * 
-   * @return Response Response of the method m1. This is a short description only for test purposes.
+   * @return Response 
    * 
    */
   @GET
@@ -107,7 +107,7 @@ public class res extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Response of the method m1. This is a short description only for test purposes.")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resp")
   })
   @ApiOperation(value = "m1", notes = " ")
   public Response m1() {
@@ -126,7 +126,7 @@ public class res extends RESTService {
     // resp
     boolean resp_condition = true;
     if(resp_condition) {
-      JSONObject result = new classes().new m1().toJSON();
+      JSONObject result = new JSONObject();
 
       
 
